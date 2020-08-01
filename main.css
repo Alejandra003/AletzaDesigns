@@ -4,10 +4,32 @@
     width: 100%;
     font-family: jost;
     margin:0px;
-    padding: 20px 0px;
     justify-content: center;
   }
   
+  .footer{
+    font-family: jost;
+    color: white;
+    line-height: 1.3;
+   text-align: center;
+  }
+
+  .footer_datos{
+      font-family: jost;
+      font-size: 31px;
+      letter-spacing: 5px;
+      color: white;
+      line-height: 1.3;
+      margin: 10px 0px;
+  }
+
+
+.cuerpof, .cuerpof a{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
   h1{
     font-family: jost;
     font-size: 80px;;
@@ -39,29 +61,33 @@
 width: 80%;
  }
 
- #menuf{
-  display: block;
-}
 
   /*header*/
 
-  .header {
+  #header{
     width: 100%;
-    text-align: center;
 }
 
 .top-menu{
     display: flex;
     background-color: #FD4343;
     justify-content: center;
+    text-align: center;
+
   }
 
   .top-header{
     background-color: #FD4343;
     padding:40px;
     justify-content: baseline;
+    text-align: center;
+    position: sticky;
   }
 
+.logo{
+  text-align: center;
+  position: sticky;
+}
   .top-menu a{
   font-family: Jost;
   font-weight: normal;
@@ -81,6 +107,7 @@ width: 80%;
 
   #imagen{
     justify-content: center;
+    text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
     height:100px;
@@ -419,6 +446,7 @@ width: 80%;
   background-repeat: no-repeat; 
   justify-content: center;
 }
+
 .contenedor2{
   height: 750px;
   margin: 0px;
@@ -471,9 +499,9 @@ width: 80%;
   display: flex;
   margin:0px;
   width: 100%;
-  justify-content:center;
+  height: auto;
   background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner5.png");
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat; 
   justify-content: center;
@@ -485,106 +513,103 @@ width: 80%;
   font-size: 80px;;
   color: black;
   line-height: 1.3;
-  margin-top: 140px;
+  margin-top: 100px;
   margin-bottom: 40px;
   text-align: center;
 }
 .contenedor4{
-  margin: 0px;
+  margin: 0px;  
   justify-content:center;
+  text-align: center;
 }
 
 .contenidop{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  width: 70%;
-  align-items:center;
+  align-content: stretch; 
+  width: min-content;
 }
 
 .contenido-titulo{
-  padding:50px;
   text-align: center;
 }
 
-#show { 
+#ale { 
   grid-column: 3/4;
   grid-row: 1/2;
-  height: 330px; 
 }
 
 #deporte{ 
   grid-column:3/4;
-  grid-row: 2/3;
-  width: 784px;  
+  grid-row: 2/3;   
 }
 
 #ninos{ 
   grid-column: 3/4;
   grid-row: 3/4;
-  width: 784px;  
 }
 
-#escenario{ 
+#escenario, #lentes, #libro{ 
   grid-column: 1/2;
 }
-#dog{ 
+
+#dog, #cmic, #recetas{ 
   grid-column: 2/3;
 }
 
-#lentes{ 
-  grid-column: 1/2;
-}
-#cmic{ 
-  grid-column: 2/3;
+ #libro{
+grid-row:3/4 ;
+ }
+
+#show { 
+  grid-column: 1/4;
+  grid-row: 4/5;
+  width: 100%;
 }
 
-#libro{ 
-  grid-column: 1/2;
-  grid-row: 3/5;
-}
-#recetas{ 
-  grid-column: 2/3;
-}
 
 /*footer*/
   .footer{ 
-    display: flex;
     padding: 30px;
     margin-bottom: 0px;
-    font-size: 26px;
     text-align: center;
-    justify-content: center;
-    color: #9c9c9c;
-    background-color: #15161a; 
+    background-color: #4E4E4E; 
+    align-items: center;
+    display: grid;
 }
 
 #imagen2{
   justify-content: center;
-  margin-top: 25px;
   margin-bottom: 25px;
+  margin-top: 25px;
   height:100px;
   width:80px;
 }
+
   /*responsive*/
   @media (max-width:2000px){
   .menu-circle{
     display:none;
    }
-   #line {
-    width: 700px;
- }
   } 
 
-  @media (max-width:1800px){
-    #line {
-      width: 600px;
-   }
-  }
- 
 
   /*header*/
   @media (max-width:900px){
+    .top-menu a {
+      margin: 16px 14px;
+  }
+  .title, .cuerpo {
+    grid-column: 1/3;
+}
+
+  #e0, #e1, .e3 {
+    grid-column: 1/3;
+}
+.title2, .cuerpo2, .h2e {
+  grid-column: 1/3;
+} 
+
     h1{
       font-size: 60px;
       line-height: 1.3;
@@ -592,17 +617,24 @@ width: 80%;
     }
   
     h2{
-      font-size: 20px;;
+      font-size: 18px;;
     }
   
-    h3{
-      font-size: 20px;;
+    h3 {
+        font-size: 16px;
     }
   
     .cuerpo, .cuerpo2{
       font-size: 18px;
       line-height: 1.3;
     }
+
+    #centrado {
+      font-size: 60px;
+      line-height: 1.3;
+      margin-top: 166px;
+      margin-bottom: 20px;
+  }
 
     #imagen{
       margin-top: 15px;
@@ -611,100 +643,246 @@ width: 80%;
     .top-header{
       padding:30px;
     }
-    /*hero*/
-    #line {
-      width: 300px;
-   }
+    
+    #presentacion{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner900.png");
+      height: 410px;
+    }
 
-   .contenedor2 {
-    height: 840px;
-   }
+    #sobre_mi{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner2900.png");
+      height: auto;
+    }
+
+    .contenedor1 {
+      height: auto;
+      margin: 0px;
+  }
+
+    #educacion{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner3900.png");
+      height: auto;
+    }
+
+    .contenedor2 {
+      height: auto;
+  }
+
+    #experiencia{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner4900.png");
+      width: auto;
+      height: auto;
+    }
+
+    .contenedor3 {
+      margin: 0px;
+      height: auto;
+  }
+
+    #proyectos{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner5900.png");
+      width: auto;
+      height: auto;
+    }
 
    .contenidop{
     display: grid;
     grid-template-columns: 1fr 1fr!important;
-    margin:50px;
-    width: 80%;
+    grid-column-gap: 0px;
+    margin:10px;
+    width: min-content;
   }
 
-  #show, #deporte, #ninos{ 
+  .contenido-titulo{
+    padding: 20px;
+  }
+
+  #ale, #deporte, #ninos{ 
     grid-column: 1/3;
-    width: 700px; 
-  }
-  .caja{
-    width: 90% !important;
+    height: 200px; 
+    width: auto;
   }
 
+  #escenario, #dog{
+    grid-row: 4/5;
+    width: 225px; 
+    height: auto;
   }
 
+  #lentes, #cmic{
+    grid-row: 5/6;
+    width: 225px; 
+    height: auto;
+  }
+  #libro, #recetas{
+    grid-row: 6/7;
+    width: 225px; 
+    height: auto;
+  }
+
+  #show{
+    grid-row: 7/8;
+    height: 250px; 
+    width: auto;
+  }
+
+
+.cuerpof, .cuerpof a {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer_datos {
+font-size: 25px;
+letter-spacing: 2px;
+}
+
+}
 
   @media (max-width:800px){
     #menuf1{
       flex-direction: row 
     }
     
-    h1{
-      font-size: 30px;
+     h1{
+      font-size: 50px;
       line-height: 1.3;
       margin:10px 0px;
     }
   
-    h2{
-      font-size: 18px;;
-    }
-  
-    h3{
-      font-size: 18px;;
-    }
+
+    #centrado {
+      font-size: 50px;
+      line-height: 1.3;
+      margin-top: 166px;
+      margin-bottom: 20px;
+  }
   
     .cuerpo, .cuerpo2{
       font-size: 16px;
       line-height: 1.3;
     }
-  .header{
+  .top, .logo{
     display:none;
   }
   .menu-circle{
     display: block;
-    height: 140px;
+    height: 120px;
     width: 100%;
    }
-  
-   #presentacion{
-    margin: -10px 0px;
-   }
 
-   #line {
-    width: 200px;
- }
+}
 
- .caja{
-   width: 80% !important;
- }
+  @media (max-width: 700px){
+    .menu-circle{
+      height: 110px;
+      position: sticky;
+     }
 
-  }
+    #presentacion{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner700.png");
+      height: 360px;
+      width: auto;
+    }
+}
 
   @media (max-width:500px){
-    /*header*/
-    .header{
-      display:none;
+    .contenedor0, .contenedor1, .contenedor2, .contenedor3, .contenedor4 {
+      width: 90%;
+  }
+    h1{
+      font-size: 40px;
+      line-height: 1.3;
+      margin:10px 0px;
     }
-    .menu-circle{
-      display: block;
-      height: 140px;
-      width: 100%;
-     }
+  
+    h2{
+      font-size: 16px;;
+    }
+  
+    h3 {
+        font-size: 16px;
+    }
+  
+    .cuerpo, .cuerpo2{
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .top-menu a {
+      margin: 20px 5px;
+      font-size: 12px;
+  }
     
      #presentacion{
-      margin: -10px 0px;
-     }
-  
-     #line {
-      width: 200px;
-   }
-  
-   .caja{
-     width: 80% !important;
-   }
-  
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner500.png");
+      width: auto;
+      height: 275px;
     }
+
+    #sobre_mi{
+      height: auto;  background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner2500.png");
+    }
+
+    #educacion{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner3500.png");
+      height: auto;
+    }
+
+    #experiencia{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner4500.png");
+    }
+  
+    #proyectos{
+      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner5500.png");
+      height: auto;
+    }
+
+    #centrado {
+      font-size: 50px;
+      line-height: 1.3;
+      margin-top: 53px;
+      margin-bottom: 18px;
+  }
+
+
+  #ale, #deporte, #ninos{ 
+    height: 130px; 
+    width: auto;
+  }
+
+  #escenario, #dog{
+    width: 150px; 
+    height: auto;
+  }
+
+  #lentes, #cmic{
+    width: 150px; 
+    height: auto;
+  }
+
+  #libro, #recetas{
+ width: 150px; 
+    height: auto;
+  }
+
+  #show{
+    height: 170px; 
+    width: auto;
+  }
+
+  .contenedor2 {
+    height: auto;
+}
+
+   .cuerpof, .cuerpof a {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer_datos {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+}

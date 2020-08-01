@@ -8,27 +8,26 @@
    <link rel="stylesheet" href="main.css">
   </head>
 
-  <header class="header">
-      <div class="logo">
-        <a href="home"> 
+  <header class="header" id="header">
+      <div class="logo", class="top">
+        <a href="#header"> 
           <img
             src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/la.png" id="imagen"
           />
         </a>
       </div>
-      
-       <div class="top-header">
+
+      <div class="top", class="top-header">
         <nav class="top-menu">
               <a href="#sobre_mi">SOBRE MI</a>
               <a href="#educacion">EDUCACIÓN</a>
               <a href="#experiencia">EXPERIENCIA</a>
               <a href="#proyectos">PROYECTOS</a>
-         </nav>
-        </div>
-  </header>
-
-  <header class="menu-circle">
-      <input type="checkbox" id="menu_active"/>
+        </nav>
+      </div>
+      
+      <div class="menu-circle">
+      <input type="checkbox" class="menu-circle" id="menu_active"/>
       <label for="menu_active" class="menu_active">
         <div class="menu_toggle">
           <div class="icon">
@@ -94,20 +93,19 @@
           </ul>
         </div>
       </label>
+    </div>
   </header>
-
+  <main> </main>
   <body>
-    <main id="presentacion">
+    <section id="presentacion">
       <div class="contenedor0">
-       
       </div>
-    </main>
+    </section>
 
     <section id="sobre_mi">
       <div class="contenedor1">
         <div class="contenido">
           <h1 class="title">Sobre mi</h1>
-          <img src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/línea.png" id="line"/>
           <text class="cuerpo">Más que hablar de mí, como creativa prefiero que mi trabajo sea el que hable por si mismo.  Dejare que el usuario sea el que  de su opinion y hable de sus necesidades e ideas, juntos podremos llegar a hacer realidad todo lo  que tiene en mente. 
           </text>
         </div>
@@ -164,10 +162,15 @@
       <div class="contenedor4">
         <div class="contenido-titulo">
           <h1 id="centrado" class="title">Proyectos</h1>
+        </div>
         <div class="contenidop">
-        <video class="caja" id="show" controls poster="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/show.png">
+        <video id="show" controls poster="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/show.png">
         <source type="video/mp4" src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/ShowCompleto.mp4"/>
         </video>
+        <img
+            src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/ale.png" class="caja" id="ale"
+          />
+          
         <img
             src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/_MG_0134.png" class="caja" id="deporte"
           />
@@ -193,7 +196,6 @@
             src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/libro.png" class="caja" id="libro"
           />
          </div>
-        </div>
       </div>
     </section>
 
@@ -207,9 +209,13 @@
       <a href="#proyectos">PROYECTOS</a>
     </nav>
    <div id="menuf" class="footer">
-    <img
-    src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/la.png" id="imagen2"/>
-   </div>
+    <text class="footer_datos">CONTÁCTO </text>
+    <a class="cuerpof" href="https://api.whatsapp.com/send?phone=5540809945&text=hola%20Ale,%20%20vi%20tu%20pagina%20y%20%C2%A1me%20interesa%20contactarte%20para%20hablar%20de%20un%20proyecto!"> Telefono: 5540809945 </a>
+    <text class="cuerpof">E-mail: aletzadesigns@gmail.com </text>
+    <div class="imagen2"> 
+      <a href="#header"> <img src="/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/la.png" id="imagen2"/> </a>
+    </div>
+  </div>
   </section>
 
 
