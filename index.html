@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-wdith,initial-scale=1.0">
    <title>Aletza Designs</title>
-   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="main.css", href="main.scss">
   </head>
 
   <header class="header" id="header">
@@ -49,36 +49,36 @@
             <li>
               <div class="placeholder">
                 <div class="upside">
-                  <a href="#sobre_mi">&nbsp</a>
+                  <a href="#sobre_mi"></a>
+                  <i class="fa" class="fa-s"></i></a>
                 </div>
               </div>
             </li>
             <li>
               <div class="placeholder">
                 <div class="upside">
-                  <a href="#educacion" class="button"><i class="fa-commenting"></i></a>
+                  <a href="#educacion" class="button"> 
+                    <i class="fa" class="fa-e"></i></a>
                 </div>
               </div>
             </li>
             <li>
               <div class="placeholder">
                 <div class="upside">
-                  <a href="#experiencia" class="button"><i class="fa-trash"></i></a>
+                  <a href="#experiencia" class="button">
+                    <i class="fa" class="fa-ex"></i></a>
                 </div>
               </div>
             </li>
             <li>
               <div class="placeholder">
                 <div class="upside">
-                  <a href="#proyectos" class="button"><i class="fa-battery-4"></i></a>
+                  <a href="#proyectos" class="button">  
+                    <i class="fa" class="fa-p"></i></a>
                 </div>
               </div>
             </li>
             <li>
-              <div class="placeholder">
-                <div class="upside">
-                  <a href="#proyectos" class="button"><i class="fa-calendar"></i></a>
-                </div>
               </div>
             </li>
           </ul>
@@ -198,6 +198,33 @@
          </div>
       </div>
     </section>
+
+    <section id="contacto">
+    <div class="formularioc">
+    <form class="formulario" action="#" id="formulario" >
+      <div>
+          <fieldset>
+              <h2>Contacto</h2>
+              <span class="required_notification">* Datos requeridos</span></br>
+                  <div>
+                      <label for="nombre">Nombre:</label></br>
+                      <input type="text" name="nombre" placeholder="Nombre" required /></br>
+                  </div>
+                  <div>
+                      <label for="email">Email:</label></br>
+                      <input type="email" name="email" placeholder="example@email.com" required /></br>
+                  </div>
+
+                  <div>
+                      <label for="message">Mensaje:</label></br>
+                      <textarea name="message" cols="40" rows="6" required></textarea></br>
+                  </div>
+                  <button class="submit" type="submit">Enviar</button></br>
+          </fieldset>
+         </div>
+        </form>
+    </div>
+  </section>
 
   </body>
 

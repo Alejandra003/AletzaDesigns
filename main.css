@@ -150,8 +150,8 @@
 .menu-circle {
   position: absolute;
   z-index: 13;
-  width: 243.33333333333334px;
-  height: 243.33333333333334px;
+  width: 243px;
+  height: 243px;
   background-color:#FD4343;
   overflow: hidden;
 }
@@ -174,10 +174,10 @@
 .menu_listings {
   z-index: 10;
   position: absolute;
-  top: -200px;
-  left: -200px;
-  width: 400px;
-  height: 400px;
+  top: -131px;
+  left: -141px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   transform: scale(0.1) rotate(150deg);
   transition: transform 1s;
@@ -198,7 +198,7 @@
 }
 .menu_arrow-top {
   top: 0.5em;
-  left: 220px;
+  left: 120px;
 }
 .menu_arrow-top .arrow {
   transform: rotate(-45deg);
@@ -211,8 +211,8 @@
   transform: rotate(-135deg);
 }
 .arrow{
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-right: 7px solid #fff;
   border-top: 7px solid #fff;
   border-radius: 3px;
@@ -237,6 +237,12 @@
   overflow: hidden;
   list-style: none;
 }
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
 .circle li {
   position: absolute;
   top: 0;
@@ -264,6 +270,7 @@
 .circle li .placeholder button {
   pointer-events: auto;
 }
+
 .circle li .placeholder .button {
   font-size: 2.3em;
   background-color: transparent;
@@ -271,6 +278,15 @@
   color:#FD4343;
   cursor: pointer;
 }
+
+.fa{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 .circle li:nth-child(1) {
   transform: rotate(0deg) skewY(-54deg);
   background-color:#FD4343;
@@ -291,26 +307,6 @@
   transform: rotate(144deg) skewY(-54deg);
   background-color: #FD4343;
 }
-.circle li:nth-child(6) {
-  transform: rotate(180deg) skewY(-54deg);
-  background-color: #FD4343;
-}
-.circle li:nth-child(7) {
-  transform: rotate(216deg) skewY(-54deg);
-  background-color: #FD4343;
-}
-.circle li:nth-child(8) {
-  transform: rotate(252deg) skewY(-54deg);
-  background-color:#FD4343;
-}
-.circle li:nth-child(9) {
-  transform: rotate(288deg) skewY(-54deg);
-  background-color: #FD4343;
-}
-.circle li:nth-child(10) {
-  transform: rotate(324deg) skewY(-54deg);
-  background-color:#FD4343;
-}
 #menu_active {
   position: fixed;
   top: -99999px;
@@ -330,14 +326,14 @@
 }
 #menu_active:checked ~ label .hamburger:after {
   top: -2px;
-  border-color: #fff;
+  border-color: #FD4343;
   transform: translateX(-50%) rotate(45deg);
   transition-property: top, transform;
   transition-duration: 0.25s, 1s;
 }
 #menu_active:checked ~ label .hamburger:before {
   bottom: -2px;
-  border-color: #fff;
+  border-color: #FD4343;
   transform: translateX(-50%) rotate(-45deg);
   transition-property: bottom, transform;
   transition-duration: 0.25s, 1s;
@@ -347,7 +343,8 @@
 }
 #menu_active:checked ~ label .menu__arrow {
   visibility: visible;
-  transition: all 1s 1.111111111111111s;
+  transition: all 1s 1.2s;
+  color:white;
 }
 #menu_active:checked ~ label .menu__arrow--top label {
   display: none;
@@ -372,6 +369,31 @@
 }
 #menu_active:checked ~ label #degree--up-1:checked ~ .menu__listings ~ .menu__arrow--top label[for="degree--up-2"] {
   display: block;
+}
+
+.fa-s:before {
+  content: url("woman.svg");
+  height: 20px;
+  width: auto;
+  color: black;
+}
+.fa-e:before {
+  content: url("graduation-cap.svg");
+  height: 20px;
+  width: auto;
+  color: black;
+}
+.fa-ex:before {
+  content: url("target.svg");
+  height: 20px;
+  width: auto;
+  color: black;
+}
+.fa-p:before {
+  content: url("monitor.svg");
+  height: 20px;
+  width: auto;
+  color: black;
 }
 
 /*hero*/
@@ -442,8 +464,9 @@
   justify-content: center;
 }
 
-.contenedor2{
-  height: 750px;
+.contenedor2 {
+  width: 80%;
+  height: 778px;
   margin: 0px;
 }
 
@@ -582,6 +605,18 @@ width: auto;
   height: auto;
 }
 
+/*formulario*/
+#contacto{
+  display: flex;
+  margin: 0px;
+  content: cover;
+  width: 100%;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  justify-content: center;
+} 
 
 /*footer*/
   .footer{ 
