@@ -371,30 +371,6 @@ li {
   display: block;
 }
 
-.fa-s:before {
-  content: url("woman.svg");
-  height: 20px;
-  width: auto;
-  color: black;
-}
-.fa-e:before {
-  content: url("graduation-cap.svg");
-  height: 20px;
-  width: auto;
-  color: black;
-}
-.fa-ex:before {
-  content: url("svg/target.svg");
-  height: 20px;
-  width: auto;
-  color: black;
-}
-.fa-p:before {
-  content: url("monitor.svg");
-  height: 20px;
-  width: auto;
-  color: black;
-}
 
 /*hero*/
 #presentacion{
@@ -882,6 +858,11 @@ letter-spacing: 2px;
       height: 380px;
       width: auto;
     }
+    .formulario:first-child div {
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+  }
 }
 
   @media (max-width:500px){
@@ -981,4 +962,68 @@ letter-spacing: 2px;
   letter-spacing: 1px;
 }
 
+.formulario:first-child div fieldset input, .formulario:first-child div fieldset textarea {
+  border: 0px solid;
+  border-radius: 5px;
+  padding: 6px;
+  background-color: #ffff;
+  color: #FD4343;
+  width: 230px;
+}
+
+#formulario fieldset {
+  color: white;
+  width: 250px;
+}
+
+#contacto {
+  padding: 39px;
+}
+
+.top-menu a {
+  margin: 20px 1px;
+  font-size: 16px;
+}
+
+}
+
+@media (max-width: 400px){
+  #presentacion {
+    background-image: url(/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner500.png);
+    width: auto;
+    height: 161px;
+}
+.top-menu a {
+    margin: 20px 2px;
+    font-size: 10px;
+
+  }#ale, #deporte, #ninos{ 
+    height: 116px; 
+    width: auto;
+  }
+  
+  #escenario, #dog{
+    width: 129px; 
+    height: auto;
+  }
+  
+  #lentes, #cmic{
+    width: 129px; 
+    height: auto;
+  }
+  
+  #libro, #recetas{
+  width: 129px; 
+    height: auto;
+  }
+  
+  #show{
+    height: 144px; 
+    width: auto;
+  }
+
+  #formulario fieldset {
+    color: white;
+    width: 237px;
+  }
 }
