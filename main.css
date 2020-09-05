@@ -378,7 +378,7 @@ li {
   margin: 0px;
   content: cover;
   width: 100%;
-  background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner.png");
+  background-image: url("assets/img/bnner.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -397,7 +397,7 @@ li {
   padding:0px;
   margin:0px;
   width: 100%;
-  background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner2.png");
+  background-image: url("assets/img/banner2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -433,7 +433,7 @@ li {
   padding:0px;
   margin:0px;
   width: 100%;
-  background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner3.png");
+  background-image: url("assets/img/banner3.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -464,7 +464,7 @@ li {
   display: flex;
   margin:0px;
   width: 100%;
-  background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner4.png");
+  background-image: url("assets/img/banner4.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -494,7 +494,7 @@ li {
   margin:0px;
   width: 100%;
   height: auto;
-  background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner5.png");
+  background-image: url("assets/img/banner5.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -726,12 +726,12 @@ width: auto;
     }
     
     #presentacion{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner900.png");
+      background-image: url("assets/img/bnner900.png");
       height: 410px;
     }
 
     #sobre_mi{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner2900.png");
+      background-image: url("assets/img/banner2900.png");
       height: auto;
     }
 
@@ -741,7 +741,7 @@ width: auto;
   }
 
     #educacion{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner3900.png");
+      background-image: url("assets/img/banner3900.png");
       height: auto;
     }
 
@@ -750,7 +750,7 @@ width: auto;
   }
 
     #experiencia{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner4900.png");
+      background-image: url("assets/img/banner4900.png");
       width: auto;
       height: auto;
     }
@@ -761,7 +761,7 @@ width: auto;
   }
 
     #proyectosD{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner5900.png");
+      background-image: url("assets/img/banner5900.png");
       width: auto;
       height: auto;
     }
@@ -860,7 +860,7 @@ letter-spacing: 2px;
      }
 
     #presentacion{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner700.png");
+      background-image: url("assets/img/bnner700.png");
       height: 380px;
       width: auto;
     }
@@ -898,26 +898,26 @@ letter-spacing: 2px;
   }
     
      #presentacion{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner500.png");
+      background-image: url("assets/img/bnner500.png");
       width: auto;
       height: 275px;
     }
 
     #sobre_mi{
-      height: auto;  background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner2500.png");
+      height: auto;  background-image: url("assets/img/banner2500.png");
     }
 
     #educacion{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner3500.png");
+      background-image: url("assets/img/banner3500.png");
       height: auto;
     }
 
     #experiencia{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner4500.png");
+      background-image: url("assets/img/banner4500.png");
     }
   
     #proyectosD{
-      background-image: url("/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/banner5500.png");
+      background-image: url("assets/img/banner5500.png");
       height: auto;
     }
 
@@ -994,7 +994,7 @@ letter-spacing: 2px;
 
 @media (max-width: 400px){
   #presentacion {
-    background-image: url(/Users/alealvarez/Desktop/AD_Blog/repo-proyecto/ale/assets/img/bnner500.png);
+    background-image: url(/assets/img/bnner500.png);
     width: auto;
     height: 161px;
 }
