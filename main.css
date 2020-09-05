@@ -581,6 +581,59 @@ width: auto;
   height: auto;
 }
 
+/*carrousel*/  
+.contenedor5{
+  display: flex;
+  width: 95%;
+  height: 570px;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  margin: 30px;
+  padding: 0px;
+  }
+  
+.contenedor5 img{
+  height: 90%;
+  align-content: center;
+  justify-content: center;
+}
+
+  .botones{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 50px;
+  position: initial;
+  text-align: center;
+  vertical-align: middle;
+  color: #FD4343;
+  box-shadow: 0 0 10px rgba(116, 116, 116, 0.228);
+  border: 1px solid #4E4E4E;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  margin: 10px;
+  }
+  
+  .botones:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+  color: #4E4E4E;
+  background-color: rgba(255, 255, 255, 0.29);
+  }
+  
+  .atras{
+  left:20%;
+  top: calc(50% - 70%);
+  }
+  
+  .adelante{
+  right:12%;
+  top: calc(50% - 70%);
+  }
+
 /*formulario*/
 #contacto{
   display: flex;
@@ -963,6 +1016,43 @@ letter-spacing: 2px;
     margin-bottom: 8px;
 }
 
+/*carrousel*/
+
+.contenedor5{
+  width:90%;
+  height: 500px;
+  margin: 40px;
+}
+
+.botones{
+height: 100px;
+border-radius: 50px;
+position: absolute;
+text-align: center;
+box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+-webkit-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition:all .3s ease;
+}
+
+.botones:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+}
+
+.atras{
+  left:2%;
+  top: calc(50% - 70%);
+}
+
+.adelante{
+  right:2%;
+  top: calc(50% - 70%);
+}
+
+
+/*contacto*/
+
 .footer_datos {
   font-size: 20px;
   letter-spacing: 1px;
@@ -987,10 +1077,8 @@ letter-spacing: 2px;
 .top-menu a {
   margin: 20px 5px;
   font-size: 16px;
-  
-}
+}}
 
-}
 
 @media (max-width: 400px){
   #presentacion {
@@ -1001,8 +1089,9 @@ letter-spacing: 2px;
 .top-menu a {
     margin: 20px 2px;
     font-size: 10px;
+  }
 
-  }#ale, #deporte, #ninos{ 
+  #ale, #deporte, #ninos{ 
     height: 116px; 
     width: auto;
   }

@@ -963,6 +963,37 @@ width: 150px;
   margin-bottom: 8px;
 }
 
+.contenedor5{
+width:90%;
+height: 500px;
+}
+
+.botones{
+height: 100px;
+border-radius: 50px;
+position: absolute;
+text-align: center;
+box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+-webkit-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+}
+
+.botones:hover{
+cursor: pointer;
+transform: scale(1.2,1.2);
+}
+
+.atras{
+left:2%;
+top: calc(50% - 70%);
+}
+
+.adelante{
+right:2%;
+top: calc(50% - 70%);
+}
+
 .footer_datos {
 font-size: 20px;
 letter-spacing: 1px;
@@ -987,10 +1018,8 @@ padding: 39px;
 .top-menu a {
 margin: 20px 5px;
 font-size: 16px;
+}}
 
-}
-
-}
 
 @media (max-width: 400px){
 #presentacion {
@@ -1001,8 +1030,9 @@ font-size: 16px;
 .top-menu a {
   margin: 20px 2px;
   font-size: 10px;
+}
 
-}#ale, #deporte, #ninos{ 
+#ale, #deporte, #ninos{ 
   height: 116px; 
   width: auto;
 }
@@ -1031,6 +1061,5 @@ width: 129px;
   width: 237px;
 }
 }
-
 
 /*# sourceMappingURL=main.css.map */
